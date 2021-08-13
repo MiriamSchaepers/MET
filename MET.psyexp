@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2020.2.4">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="fileList"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="MET" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="Break">
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (((trials.thisN === 0) || ((trials.thisN % 10) !== 0))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if trials.thisN == 0 or trials.thisN % 10 !=0:&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Take a break press space to continue " valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="break_key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="break_key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="EmRtrial">
+      <ImageComponent name="Emo_image">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Main_images" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="Emo_image" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.8, 0.4)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="Em_key_resp">
+        <Param name="allowedKeys" updates="constant" val="'1','2','3','4'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="$Correct_buttonpress" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Em_key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="Em_first_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="Em_first_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.5, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Em_first&amp;#10;" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="Em_second_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="Em_second_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(-0.2, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Em_second&amp;#10;" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="Em_third_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="Em_third_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.2, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Em_third&amp;#10;" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="Em_fourth_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="code"/>
+        <Param name="name" updates="None" val="Em_fourth_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0.5, -0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$Em_fourth&amp;#10;&amp;#10;" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="EmpathyTrial">
+      <CodeComponent name="Force_Resp_code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if Empathy_slider.getRating() != None:&amp;#10;      if 'space' in Empa_Next_key_resp.keys:&amp;#10;          continueRoutine=False" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((Empathy_slider.getRating() !== null)) {&amp;#10;    if (_pj.in_es6(&quot;space&quot;, Empa_Next_key_resp.keys)) {&amp;#10;        continueRoutine = false;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="Force_Resp_code" valType="code"/>
+      </CodeComponent>
+      <ImageComponent name="image">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Main_images" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="image" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.6, 0.4)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <TextComponent name="EmpathyQ">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="name" updates="None" val="EmpathyQ" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.4)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="How much do you emphasize with this person?" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <SliderComponent name="Empathy_slider">
+        <Param name="color" updates="constant" val="LightGray" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="False" valType="bool"/>
+        <Param name="font" updates="constant" val="HelveticaBold" valType="str"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="granularity" updates="constant" val="1" valType="code"/>
+        <Param name="labels" updates="constant" val="(1, 2, 3, 4, 5, 6, 7, 8, 9)" valType="list"/>
+        <Param name="name" updates="None" val="Empathy_slider" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.35)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1, 0.05)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="styles" updates="constant" val="['triangleMarker']" valType="fixedList"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="ticks" updates="constant" val="(1, 2, 3, 4, 5, 6, 7, 8, 9)" valType="list"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </SliderComponent>
+      <KeyboardComponent name="Empa_Next_key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="Empa_Next_key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="EmpInfo_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.02" valType="code"/>
+        <Param name="name" updates="None" val="EmpInfo_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.47)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="(Mouse click to select response and press space to continue)" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Break_Emp">
+      <CodeComponent name="code_2">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (((Empa_trials.thisN === 0) || ((Empa_trials.thisN % 10) !== 0))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if Empa_trials.thisN == 0 or Empa_trials.thisN % 10 !=0:&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="Break_Emp_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="Break_Emp_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Break &amp;#10;Space to continue " valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="break_key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="break_key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Break_Emo">
+      <CodeComponent name="code_3">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (((Emo_trials.thisN === 0) || ((Emo_trials.thisN % 10) !== 0))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if Emo_trials.thisN == 0 or Emo_trials.thisN % 10 != 0:&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="Emo_break_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+        <Param name="name" updates="None" val="Emo_break_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Break &amp;#10;Space to continue" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="EmoBreak_key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="EmoBreak_key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Break_Emp_2">
+      <CodeComponent name="code_4">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (((Emo_trials.thisN === 0) || ((Emo_trials.thisN % 10) !== 0))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if Emo_trials.thisN == 0 or Emo_trials.thisN % 10 != 0:&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="Emo_break_text_2">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+        <Param name="name" updates="None" val="Emo_break_text_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Break &amp;#10;Space to continue" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="EmoBreak_key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="EmoBreak_key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="Thanks">
+      <TextComponent name="Thanks_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="Thanks_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Thank You!" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="Instructions">
+      <TextComponent name="Instructions_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+        <Param name="name" updates="None" val="Instructions_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Welcome&amp;#10;Emotiont reconition task - press corresponding number on keybord &amp;#10;Empthy - mouse click answere on slider and continue with space &amp;#10; Space to start" valType="extendedStr"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="Instructions_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="Instructions_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="Emo_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Main_images', 'Dobby_1.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. triumphant'), ('Em_third', '3. relieved'), ('Em_fourth', '4. surprised'), ('Correct_buttonpress', 1), ('Correct_Em', 'satisfied')]), OrderedDict([('Main_images', 'Dobby_2.jpg'), ('Em_first', '1. amused'), ('Em_second', '2. grateful'), ('Em_third', '3. interested'), ('Em_fourth', '4. satisfied'), ('Correct_buttonpress', 2), ('Correct_Em', 'grateful')]), OrderedDict([('Main_images', 'Dobby_3.jpg'), ('Em_first', '1. embarrassed'), ('Em_second', '2. disgusted'), ('Em_third', '3. dejected'), ('Em_fourth', '4. despaired'), ('Correct_buttonpress', 3), ('Correct_Em', 'dejected')]), OrderedDict([('Main_images', 'Dobby_4.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. charmed'), ('Em_third', '3. relieved'), ('Em_fourth', '4. victorious'), ('Correct_buttonpress', 4), ('Correct_Em', 'victorious')]), OrderedDict([('Main_images', 'Dobby_5.jpg'), ('Em_first', '1. relaxed'), ('Em_second', '2. pleased'), ('Em_third', '3. grateful'), ('Em_fourth', '4. liberated'), ('Correct_buttonpress', 1), ('Correct_Em', 'relaxed')]), OrderedDict([('Main_images', 'Dobby_6.jpg'), ('Em_first', '1. bothered'), ('Em_second', '2. stunned'), ('Em_third', '3. embarassed'), ('Em_fourth', '4. astonished'), ('Correct_buttonpress', 2), ('Correct_Em', 'stunned')]), OrderedDict([('Main_images', 'Dobby_7.jpg'), ('Em_first', '1. blissful'), ('Em_second', '2. grateful'), ('Em_third', '3. triumphant'), ('Em_fourth', '4. moved'), ('Correct_buttonpress', 3), ('Correct_Em', 'triumphant')]), OrderedDict([('Main_images', 'Dobby_8.jpg'), ('Em_first', '1. painful'), ('Em_second', '2. sorrowful'), ('Em_third', '3. sad'), ('Em_fourth', '4. frustrated'), ('Correct_buttonpress', 4), ('Correct_Em', 'frustrated')]), OrderedDict([('Main_images', 'Dobby_9.jpg'), ('Em_first', '1. euphoric'), ('Em_second', '2. proud'), ('Em_third', '3. pleased'), ('Em_fourth', '4. arrogant'), ('Correct_buttonpress', 1), ('Correct_Em', 'euphoric')]), OrderedDict([('Main_images', 'Dobby_10.jpg'), ('Em_first', '1. amused'), ('Em_second', '2. content'), ('Em_third', '3. curious'), ('Em_fourth', '4. adoring'), ('Correct_buttonpress', 2), ('Correct_Em', 'content')]), OrderedDict([('Main_images', 'Dobby_11.jpg'), ('Em_first', '1. easygoing'), ('Em_second', '2. forgiving'), ('Em_third', '3. satisfied'), ('Em_fourth', '4. euphoric'), ('Correct_buttonpress', 3), ('Correct_Em', 'satisfied')]), OrderedDict([('Main_images', 'Dobby_12.jpg'), ('Em_first', '1. distraught'), ('Em_second', '2. lethargic'), ('Em_third', '3. unhappy'), ('Em_fourth', '4. agonized'), ('Correct_buttonpress', 4), ('Correct_Em', 'agonized')]), OrderedDict([('Main_images', 'Dobby_13.jpg'), ('Em_first', '1. pained'), ('Em_second', '2. uncomfortable'), ('Em_third', '3. horrified'), ('Em_fourth', '4. fearful'), ('Correct_buttonpress', 1), ('Correct_Em', 'pained')]), OrderedDict([('Main_images', 'Dobby_14.jpg'), ('Em_first', '1. gratified'), ('Em_second', '2. amused'), ('Em_third', '3. energetic'), ('Em_fourth', '4. touched'), ('Correct_buttonpress', 2), ('Correct_Em', 'amused')]), OrderedDict([('Main_images', 'Dobby_15.jpg'), ('Em_first', '1. curious'), ('Em_second', '2. adoring'), ('Em_third', '3. cheerful'), ('Em_fourth', '4. enthusiastic'), ('Correct_buttonpress', 3), ('Correct_Em', 'cheerful')]), OrderedDict([('Main_images', 'Dobby_16.jpg'), ('Em_first', '1. scared'), ('Em_second', '2. confused'), ('Em_third', '3. impatient'), ('Em_fourth', '4. hopeless'), ('Correct_buttonpress', 4), ('Correct_Em', 'hopeless')]), OrderedDict([('Main_images', 'Dobby_17.jpg'), ('Em_first', '1. appalled'), ('Em_second', '2. angry'), ('Em_third', '3. guilty'), ('Em_fourth', '4. distrustful'), ('Correct_buttonpress', 1), ('Correct_Em', 'appalled')]), OrderedDict([('Main_images', 'Dobby_18.jpg'), ('Em_first', '1. concerned'), ('Em_second', '2. crestfallen'), ('Em_third', '3. embarrassed'), ('Em_fourth', '4. worried'), ('Correct_buttonpress', 2), ('Correct_Em', 'crestfallen')]), OrderedDict([('Main_images', 'Dobby_19.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. relaxed'), ('Em_third', '3. carefree'), ('Em_fourth', '4. interested'), ('Correct_buttonpress', 3), ('Correct_Em', 'carefree')]), OrderedDict([('Main_images', 'Dobby_20.jpg'), ('Em_first', '1. unwilling'), ('Em_second', '2. displeased'), ('Em_third', '3. hateful'), ('Em_fourth', '4. intimidated'), ('Correct_buttonpress', 4), ('Correct_Em', 'intimidated')]), OrderedDict([('Main_images', 'Dobby_21.jpg'), ('Em_first', '1. joyful'), ('Em_second', '2. satisfied'), ('Em_third', '3. mesmerized'), ('Em_fourth', '4. fascinated'), ('Correct_buttonpress', 1), ('Correct_Em', 'joyful')]), OrderedDict([('Main_images', 'Dobby_22.jpg'), ('Em_first', '1. startled'), ('Em_second', '2. sad'), ('Em_third', '3. upset'), ('Em_fourth', '4. offended'), ('Correct_buttonpress', 2), ('Correct_Em', 'sad')]), OrderedDict([('Main_images', 'Dobby_23.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. jubilant'), ('Em_third', '3. adoring'), ('Em_fourth', '4. ecstatic'), ('Correct_buttonpress', 3), ('Correct_Em', 'adoring')]), OrderedDict([('Main_images', 'Dobby_24.jpg'), ('Em_first', '1. elated'), ('Em_second', '2. relieved'), ('Em_third', '3. attentive'), ('Em_fourth', '4. loving'), ('Correct_buttonpress', 4), ('Correct_Em', 'loving')]), OrderedDict([('Main_images', 'Dobby_25.jpg'), ('Em_first', '1. shy'), ('Em_second', '2. stunned'), ('Em_third', '3. euphoric'), ('Em_fourth', '4. dreamy'), ('Correct_buttonpress', 1), ('Correct_Em', 'shy')]), OrderedDict([('Main_images', 'Dobby_26.jpg'), ('Em_first', '1. jealous'), ('Em_second', '2. grief-stricken'), ('Em_third', '3. embarrassed'), ('Em_fourth', '4. disappointed'), ('Correct_buttonpress', 2), ('Correct_Em', 'grief-stricken')]), OrderedDict([('Main_images', 'Dobby_27.jpg'), ('Em_first', '1. comfortable'), ('Em_second', '2. composed'), ('Em_third', '3. interested'), ('Em_fourth', '4. overwhelmed'), ('Correct_buttonpress', 3), ('Correct_Em', 'interested')]), OrderedDict([('Main_images', 'Dobby_28.jpg'), ('Em_first', '1. despaired'), ('Em_second', '2. bored'), ('Em_third', '3. jealous'), ('Em_fourth', '4. weary'), ('Correct_buttonpress', 4), ('Correct_Em', 'weary')]), OrderedDict([('Main_images', 'Dobby_29.jpg'), ('Em_first', '1. agonized'), ('Em_second', '2. fearful'), ('Em_third', '3. hopeless'), ('Em_fourth', '4. sad'), ('Correct_buttonpress', 1), ('Correct_Em', 'agonized')]), OrderedDict([('Main_images', 'Dobby_30.jpg'), ('Em_first', '1. reluctant'), ('Em_second', '2. fearful'), ('Em_third', '3. despaired'), ('Em_fourth', '4. surprised'), ('Correct_buttonpress', 2), ('Correct_Em', 'fearful')]), OrderedDict([('Main_images', 'Dobby_31.jpg'), ('Em_first', '1. relieved'), ('Em_second', '2. triumphant'), ('Em_third', '3. animated'), ('Em_fourth', '4. determined'), ('Correct_buttonpress', 3), ('Correct_Em', 'animated')]), OrderedDict([('Main_images', 'Dobby_32.jpg'), ('Em_first', '1. amused'), ('Em_second', '2. interested'), ('Em_third', '3. fascinated'), ('Em_fourth', '4. excited'), ('Correct_buttonpress', 4), ('Correct_Em', 'excited')]), OrderedDict([('Main_images', 'Dobby_33.jpg'), ('Em_first', '1. nostalgic'), ('Em_second', '2. energetic'), ('Em_third', '3. devoted'), ('Em_fourth', '4. elated'), ('Correct_buttonpress', 1), ('Correct_Em', 'nostalgic')]), OrderedDict([('Main_images', 'Dobby_34.jpg'), ('Em_first', '1. sad'), ('Em_second', '2. pleading'), ('Em_third', '3. disgruntled'), ('Em_fourth', '4. melancholic'), ('Correct_buttonpress', 2), ('Correct_Em', 'pleading')]), OrderedDict([('Main_images', 'Dobby_35.jpg'), ('Em_first', '1. joyless'), ('Em_second', '2. despaired'), ('Em_third', '3. pained'), ('Em_fourth', '4. irked'), ('Correct_buttonpress', 3), ('Correct_Em', 'pained')]), OrderedDict([('Main_images', 'Dobby_36.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. expectant'), ('Em_third', '3. depressed'), ('Em_fourth', '4. contemplative'), ('Correct_buttonpress', 4), ('Correct_Em', 'contemplative')]), OrderedDict([('Main_images', 'Dobby_37.jpg'), ('Em_first', '1. heartbroken'), ('Em_second', '2. sad'), ('Em_third', '3. embittered'), ('Em_fourth', '4. despondent'), ('Correct_buttonpress', 1), ('Correct_Em', 'heartbroken')]), OrderedDict([('Main_images', 'Dobby_38.jpg'), ('Em_first', '1. hassled'), ('Em_second', '2. pensive'), ('Em_third', '3. heartbroken'), ('Em_fourth', '4. gulity'), ('Correct_buttonpress', 2), ('Correct_Em', 'pensive')]), OrderedDict([('Main_images', 'Dobby_39.jpg'), ('Em_first', '1. gloomy'), ('Em_second', '2. guilty'), ('Em_third', '3. despaired'), ('Em_fourth', '4. defiant'), ('Correct_buttonpress', 3), ('Correct_Em', 'despaired')]), OrderedDict([('Main_images', 'Dobby_40.jpg'), ('Em_first', '1. dissatisfied'), ('Em_second', '2. confused'), ('Em_third', '3. disinterested'), ('Em_fourth', '4. disillusioned'), ('Correct_buttonpress', 4), ('Correct_Em', 'disillusioned')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Main_condition_Emo.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="Emo_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="EmRtrial"/>
+    <Routine name="Break_Emo"/>
+    <LoopTerminator name="Emo_trials"/>
+    <LoopInitiator loopType="TrialHandler" name="Empa_trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Main_images', '09_reformatted.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. triumphant'), ('Em_third', '3. relieved'), ('Em_fourth', '4. surprised'), ('Correct_buttonpress', 1), ('Correct_Em', 'satisfied')]), OrderedDict([('Main_images', '10_reformatted.jpg'), ('Em_first', '1. amused'), ('Em_second', '2. grateful'), ('Em_third', '3. interested'), ('Em_fourth', '4. satisfied'), ('Correct_buttonpress', 2), ('Correct_Em', 'grateful')]), OrderedDict([('Main_images', '18_reformatted.jpg'), ('Em_first', '1. embarrassed'), ('Em_second', '2. disgusted'), ('Em_third', '3. dejected'), ('Em_fourth', '4. despaired'), ('Correct_buttonpress', 3), ('Correct_Em', 'dejected')]), OrderedDict([('Main_images', '21_reformatted.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. charmed'), ('Em_third', '3. relieved'), ('Em_fourth', '4. victorious'), ('Correct_buttonpress', 4), ('Correct_Em', 'victorious')]), OrderedDict([('Main_images', '23_reformatted.jpg'), ('Em_first', '1. relaxed'), ('Em_second', '2. pleased'), ('Em_third', '3. grateful'), ('Em_fourth', '4. liberated'), ('Correct_buttonpress', 1), ('Correct_Em', 'relaxed')]), OrderedDict([('Main_images', '24_reformatted.jpg'), ('Em_first', '1. bothered'), ('Em_second', '2. stunned'), ('Em_third', '3. embarassed'), ('Em_fourth', '4. astonished'), ('Correct_buttonpress', 2), ('Correct_Em', 'stunned')]), OrderedDict([('Main_images', '26_reformatted.jpg'), ('Em_first', '1. blissful'), ('Em_second', '2. grateful'), ('Em_third', '3. triumphant'), ('Em_fourth', '4. moved'), ('Correct_buttonpress', 3), ('Correct_Em', 'triumphant')]), OrderedDict([('Main_images', '29_reformatted.jpg'), ('Em_first', '1. painful'), ('Em_second', '2. sorrowful'), ('Em_third', '3. sad'), ('Em_fourth', '4. frustrated'), ('Correct_buttonpress', 4), ('Correct_Em', 'frustrated')]), OrderedDict([('Main_images', '31_reformatted.jpg'), ('Em_first', '1. euphoric'), ('Em_second', '2. proud'), ('Em_third', '3. pleased'), ('Em_fourth', '4. arrogant'), ('Correct_buttonpress', 1), ('Correct_Em', 'euphoric')]), OrderedDict([('Main_images', '32_reformatted.jpg'), ('Em_first', '1. amused'), ('Em_second', '2. content'), ('Em_third', '3. curious'), ('Em_fourth', '4. adoring'), ('Correct_buttonpress', 2), ('Correct_Em', 'content')]), OrderedDict([('Main_images', '33_reformatted.jpg'), ('Em_first', '1. easygoing'), ('Em_second', '2. forgiving'), ('Em_third', '3. satisfied'), ('Em_fourth', '4. euphoric'), ('Correct_buttonpress', 3), ('Correct_Em', 'satisfied')]), OrderedDict([('Main_images', '34_reformatted.jpg'), ('Em_first', '1. distraught'), ('Em_second', '2. lethargic'), ('Em_third', '3. unhappy'), ('Em_fourth', '4. agonized'), ('Correct_buttonpress', 4), ('Correct_Em', 'agonized')]), OrderedDict([('Main_images', '35_reformatted.jpg'), ('Em_first', '1. pained'), ('Em_second', '2. uncomfortable'), ('Em_third', '3. horrified'), ('Em_fourth', '4. fearful'), ('Correct_buttonpress', 1), ('Correct_Em', 'pained')]), OrderedDict([('Main_images', '36_reformatted.jpg'), ('Em_first', '1. gratified'), ('Em_second', '2. amused'), ('Em_third', '3. energetic'), ('Em_fourth', '4. touched'), ('Correct_buttonpress', 2), ('Correct_Em', 'amused')]), OrderedDict([('Main_images', '37_reformatted.jpg'), ('Em_first', '1. curious'), ('Em_second', '2. adoring'), ('Em_third', '3. cheerful'), ('Em_fourth', '4. enthusiastic'), ('Correct_buttonpress', 3), ('Correct_Em', 'cheerful')]), OrderedDict([('Main_images', '38_reformatted.jpg'), ('Em_first', '1. scared'), ('Em_second', '2. confused'), ('Em_third', '3. impatient'), ('Em_fourth', '4. hopeless'), ('Correct_buttonpress', 4), ('Correct_Em', 'hopeless')]), OrderedDict([('Main_images', '39_reformatted.jpg'), ('Em_first', '1. appalled'), ('Em_second', '2. angry'), ('Em_third', '3. guilty'), ('Em_fourth', '4. distrustful'), ('Correct_buttonpress', 1), ('Correct_Em', 'appalled')]), OrderedDict([('Main_images', '40_reformatted.jpg'), ('Em_first', '1. concerned'), ('Em_second', '2. crestfallen'), ('Em_third', '3. embarrassed'), ('Em_fourth', '4. worried'), ('Correct_buttonpress', 2), ('Correct_Em', 'crestfallen')]), OrderedDict([('Main_images', '48_reformatted.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. relaxed'), ('Em_third', '3. carefree'), ('Em_fourth', '4. interested'), ('Correct_buttonpress', 3), ('Correct_Em', 'carefree')]), OrderedDict([('Main_images', '54_reformatted.jpg'), ('Em_first', '1. unwilling'), ('Em_second', '2. displeased'), ('Em_third', '3. hateful'), ('Em_fourth', '4. intimidated'), ('Correct_buttonpress', 4), ('Correct_Em', 'intimidated')]), OrderedDict([('Main_images', '57_reformatted.jpg'), ('Em_first', '1. joyful'), ('Em_second', '2. satisfied'), ('Em_third', '3. mesmerized'), ('Em_fourth', '4. fascinated'), ('Correct_buttonpress', 1), ('Correct_Em', 'joyful')]), OrderedDict([('Main_images', '60_reformatted.jpg'), ('Em_first', '1. startled'), ('Em_second', '2. sad'), ('Em_third', '3. upset'), ('Em_fourth', '4. offended'), ('Correct_buttonpress', 2), ('Correct_Em', 'sad')]), OrderedDict([('Main_images', '61_reformatted.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. jubilant'), ('Em_third', '3. adoring'), ('Em_fourth', '4. ecstatic'), ('Correct_buttonpress', 3), ('Correct_Em', 'adoring')]), OrderedDict([('Main_images', '62_reformatted.jpg'), ('Em_first', '1. elated'), ('Em_second', '2. relieved'), ('Em_third', '3. attentive'), ('Em_fourth', '4. loving'), ('Correct_buttonpress', 4), ('Correct_Em', 'loving')]), OrderedDict([('Main_images', '63_reformatted.jpg'), ('Em_first', '1. shy'), ('Em_second', '2. stunned'), ('Em_third', '3. euphoric'), ('Em_fourth', '4. dreamy'), ('Correct_buttonpress', 1), ('Correct_Em', 'shy')]), OrderedDict([('Main_images', '65_reformatted.jpg'), ('Em_first', '1. jealous'), ('Em_second', '2. grief-stricken'), ('Em_third', '3. embarrassed'), ('Em_fourth', '4. disappointed'), ('Correct_buttonpress', 2), ('Correct_Em', 'grief-stricken')]), OrderedDict([('Main_images', '67_reformatted.jpg'), ('Em_first', '1. comfortable'), ('Em_second', '2. composed'), ('Em_third', '3. interested'), ('Em_fourth', '4. overwhelmed'), ('Correct_buttonpress', 3), ('Correct_Em', 'interested')]), OrderedDict([('Main_images', '68_reformatted.jpg'), ('Em_first', '1. despaired'), ('Em_second', '2. bored'), ('Em_third', '3. jealous'), ('Em_fourth', '4. weary'), ('Correct_buttonpress', 4), ('Correct_Em', 'weary')]), OrderedDict([('Main_images', '69_reformatted.jpg'), ('Em_first', '1. agonized'), ('Em_second', '2. fearful'), ('Em_third', '3. hopeless'), ('Em_fourth', '4. sad'), ('Correct_buttonpress', 1), ('Correct_Em', 'agonized')]), OrderedDict([('Main_images', '71_reformatted.jpg'), ('Em_first', '1. reluctant'), ('Em_second', '2. fearful'), ('Em_third', '3. despaired'), ('Em_fourth', '4. surprised'), ('Correct_buttonpress', 2), ('Correct_Em', 'fearful')]), OrderedDict([('Main_images', '72_reformatted.jpg'), ('Em_first', '1. relieved'), ('Em_second', '2. triumphant'), ('Em_third', '3. animated'), ('Em_fourth', '4. determined'), ('Correct_buttonpress', 3), ('Correct_Em', 'animated')]), OrderedDict([('Main_images', '73_reformatted.jpg'), ('Em_first', '1. amused'), ('Em_second', '2. interested'), ('Em_third', '3. fascinated'), ('Em_fourth', '4. excited'), ('Correct_buttonpress', 4), ('Correct_Em', 'excited')]), OrderedDict([('Main_images', '74_reformatted.jpg'), ('Em_first', '1. nostalgic'), ('Em_second', '2. energetic'), ('Em_third', '3. devoted'), ('Em_fourth', '4. elated'), ('Correct_buttonpress', 1), ('Correct_Em', 'nostalgic')]), OrderedDict([('Main_images', '75_reformatted.jpg'), ('Em_first', '1. sad'), ('Em_second', '2. pleading'), ('Em_third', '3. disgruntled'), ('Em_fourth', '4. melancholic'), ('Correct_buttonpress', 2), ('Correct_Em', 'pleading')]), OrderedDict([('Main_images', '76_reformatted.jpg'), ('Em_first', '1. joyless'), ('Em_second', '2. despaired'), ('Em_third', '3. pained'), ('Em_fourth', '4. irked'), ('Correct_buttonpress', 3), ('Correct_Em', 'pained')]), OrderedDict([('Main_images', '77_reformatted.jpg'), ('Em_first', '1. satisfied'), ('Em_second', '2. expectant'), ('Em_third', '3. depressed'), ('Em_fourth', '4. contemplative'), ('Correct_buttonpress', 4), ('Correct_Em', 'contemplative')]), OrderedDict([('Main_images', '79_reformatted.jpg'), ('Em_first', '1. heartbroken'), ('Em_second', '2. sad'), ('Em_third', '3. embittered'), ('Em_fourth', '4. despondent'), ('Correct_buttonpress', 1), ('Correct_Em', 'heartbroken')]), OrderedDict([('Main_images', '80_reformatted.jpg'), ('Em_first', '1. hassled'), ('Em_second', '2. pensive'), ('Em_third', '3. heartbroken'), ('Em_fourth', '4. gulity'), ('Correct_buttonpress', 2), ('Correct_Em', 'pensive')]), OrderedDict([('Main_images', '81_reformatted.jpg'), ('Em_first', '1. gloomy'), ('Em_second', '2. guilty'), ('Em_third', '3. despaired'), ('Em_fourth', '4. defiant'), ('Correct_buttonpress', 3), ('Correct_Em', 'despaired')]), OrderedDict([('Main_images', '82_reformatted.jpg'), ('Em_first', '1. dissatisfied'), ('Em_second', '2. confused'), ('Em_third', '3. disinterested'), ('Em_fourth', '4. disillusioned'), ('Correct_buttonpress', 4), ('Correct_Em', 'disillusioned')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Main_condition_Emo.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="Empa_trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="EmpathyTrial"/>
+    <Routine name="Break_Emp"/>
+    <LoopTerminator name="Empa_trials"/>
+    <Routine name="Thanks"/>
+  </Flow>
+</PsychoPy2experiment>
